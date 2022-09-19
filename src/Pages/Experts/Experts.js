@@ -7,6 +7,7 @@ import experts4 from "../../Images/experts/expert-4.jpg";
 import experts5 from "../../Images/experts/expert-5.jpg";
 import experts6 from "../../Images/experts/expert-6.png";
 import Expert from "../Expert/Expert";
+import { Helmet } from "react-helmet-async";
 
 
 const experts =[
@@ -21,6 +22,7 @@ const experts =[
 const Experts = () => {
   return (
     <div>
+       <Helmet title="Experts-Genius car"></Helmet>
       <h2 className="text-primary text-center experts">Our Experts</h2>
       <div className="experts-container">
          {

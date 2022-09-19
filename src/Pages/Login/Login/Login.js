@@ -8,6 +8,7 @@ import SocialLogin from "../../SocialLogin/SocialLogin";
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import Loading from "../../Shared/Loading/Loading";
+import { Helmet } from "react-helmet-async";
 
 
 const Login = () => {
@@ -57,6 +58,7 @@ const navigateRegister= ()=>{
 
   return (
     <div className="container w-50 mx-auto">
+       <Helmet title="Login-Genius car"></Helmet>
       <h2 className="text-primary text-center ">Please Login </h2>
       <Form onSubmit={handleSubmit} >
         <Form.Group className="mb-3" controlId="formBasicEmail">

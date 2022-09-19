@@ -5,6 +5,7 @@ import './Register.css'
 import auth from '../../../firebase.init';
 import { async } from '@firebase/util';
 import Loading from '../../Shared/Loading/Loading';
+import { Helmet } from 'react-helmet-async';
 
 
 const Register = () => {
@@ -36,6 +37,7 @@ const Register = () => {
         }
     return (
         <div className='register-form'>
+             <Helmet title="Register-Genius car"></Helmet>
             <h2 className='text-center text-primary'>Please Register</h2>
             <form onSubmit={handleRegister}>
                 <input type="text" name="name" id="" placeholder='Your Name'/>
